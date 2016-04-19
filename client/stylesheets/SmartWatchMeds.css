@@ -1,0 +1,102 @@
+#medicationPlanModal .modal-dialog {
+  width: 400px;
+  margin: 0 auto;
+  /*add what you want here*/
+}
+.div-space {
+  margin: 30px 0px 10px 0px;
+}
+.qr-pics {
+  width: 150px;
+  height: 150px;
+}
+.input-size {
+  width: 250px;
+}
+.label-space {
+  margin: 2px 0 2px 0px;
+}
+
+.legend {
+  float: right;
+  margin-top: 50px;
+}
+
+.legend h5 {
+  float: left;
+  margin-right: 10px;
+  line-height: 10px;
+}
+
+.logo {
+  float: left;
+  width: 20%;
+  height: 20%;
+}
+
+.logo-text {
+  color: black;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+#advanced {
+  background-image: -moz-radial-gradient(45px 45px 45deg, circle cover, yellow 0%, #cc0066 100%, red 95%);
+  background-image: -webkit-radial-gradient(45px 45px, circle cover, #cc0066, orange);
+  background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, #cc0066 100%, red 95%);
+
+  animation-name: spin;
+  animation-duration: 3s; /* 3 seconds */
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.circle {
+  background-color: #8aeab6;
+  margin: 2px 2px 2px 2px;
+  margin-right: 2px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  display: inline-block;
+}
+
+.status-green {
+  background-color: #8aeab6;
+}
+
+.status-yellow {
+  background-color: #ead32d;
+  margin: 2px 2px 2px 2px;
+  margin-right: 2px;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  display: inline-block;
+}
+
+.status-red {
+  background-color: #8aeab6;
+}
+
+.status-grey {
+  background-color: #cbcbcb;
+  height: 30px;
+  width: 30px;
+  text-align: center;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  display: inline-block;
+}
+
+.circle i {
+  color: #fff;
+  line-height: 30px;
+}

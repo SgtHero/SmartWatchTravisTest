@@ -1,0 +1,20 @@
+<template name="Home">
+    <div class="container">
+        {{#if currentUser}}
+            {{> addPatientModal}}
+            <h2 class="lead">Liste der aktuellen Patienten:</h2>
+            <div id="name">
+                {{> patients}}
+            </div>
+            <a href="#" id="addPat" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span> Patient
+                hinzufügen</a>
+            <br>
+            <br>
+            {{> patientCount}}
+        {{else}}
+            <div class="alert alert-info" role="alert">Um Medikationspläne für Patienten anlegen zu können oder
+                einzusehen - bitte einloggen
+            </div>
+        {{/if}}
+    </div>
+</template>

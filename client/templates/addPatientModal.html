@@ -1,0 +1,41 @@
+<template name="addPatientModal">
+  <div class="modal fade" id="addPatientModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Patienten hinzufügen</h4>
+        </div>
+        <div class="modal-body">
+          <label class="label-space" for="firstName">Vorname:
+          </label>
+          <br>
+          <input class="input-size" type="text" name="FirstName" id="firstName" autofocus placeholder="Vorname"/>
+          <br>
+          <label class="label-space" for="lastName">Nachname:
+          </label>
+          <br>
+          <input class="input-size" type="text" name="LastName" id="lastName" placeholder="Nachname">
+          <br>
+          <label class="label-space" for="birthdate">Geburtsdatum:
+          </label>
+          <br>
+          <input class="input-size" type="date" name="Birthdate" id="birthdate" placeholder="Geburtsdatum"/>
+          <br>
+          <label class="label-space" for="weight">Gewicht:
+          </label>
+          <br>
+          <input class="input-size" type="number" name="Weight" id="weight" placeholder="Körpergewicht in kg - aufgerundet"/>
+          <br>
+          <label class="label-space" for="heigth">Körpergröße:
+          </label>
+          <br>
+          <input class="input-size" type="number" name="Heigth" id="heigth" placeholder="Körpergröße in cm - aufgerundet"/>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" id="save"><span class="glyphicon glyphicon-plus"></span> Hinzufügen</button>
+          <button type="button" class="btn btn-warning" data-dismiss="modal"><span class="glyphicon glyphicon-ban-circle"></span> Abbrechen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -1,0 +1,125 @@
+<template name="editPatientMedPlanModal">
+  <div class="modal fade" id="editPatientMedPlanModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Medikament editieren</h4>
+        </div>
+        <div class="modal-body">
+          <!-- <div class="row"> -->
+          <!-- <div class="col-md-6"> -->
+          <label class="label-space" for="name">Wirkstoff:</label>
+          <br>
+          <input class="input-size" type="text" name="ActiveSubstanceEdit" placeholder="Wirkstoff eintragen" value="{{medication.activeSubstance}}">
+          <br>
+          <label class="label-space" for="name">Handelsname:</label>
+          <br>
+          <input class="input-size" type="text" name="TradingNameEdit" placeholder="Handelsname eintragen" value="{{medication.tradingName}}">
+          <br>
+          <label class="label-space" for="name">Dosis:</label>
+          <br>
+          <input class="input-size" type="text" name="DoseEdit" placeholder="Dosis eintragen" value="{{medication.dose}}">
+          <br>
+          <br>
+          <div class="form-group">
+            <label class="label-space" for="name">Form:</label>
+            <select name="FormEdit">
+              <option selected="{{selectForm 'Tabletten'}}">Tablette</option>
+              <option selected="{{selectForm 'Tropfen'}}">Tropfen</option>
+              <option selected="{{selectForm 'Spray'}}">Spray</option>
+              <option selected="{{selectForm 'Pulver'}}">Pulver</option>
+              <option selected="{{selectForm 'Salbe'}}">Salbe</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="label-space" for="name">Morgens:</label>
+            <select name="QuantityMorningEdit">
+              <option selected="{{selectQuantityMorning '1'}}">1</option>
+              <option selected="{{selectQuantityMorning '2'}}">2</option>
+              <option selected="{{selectQuantityMorning '3'}}">3</option>
+              <option selected="{{selectQuantityMorning ''}}"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="label-space" for="name">Mittags:</label>
+            <select name="QuantityMiddayEdit">
+              <option selected="{{selectQuantityMidday '1'}}">1</option>
+              <option selected="{{selectQuantityMidday '2'}}">2</option>
+              <option selected="{{selectQuantityMidday '3'}}">3</option>
+              <option selected="{{selectQuantityMidday ''}}"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="label-space" for="name">Abends:</label>
+            <select name="QuantityEveningEdit">
+              <option selected="{{selectQuantityEvening '1'}}">1</option>
+              <option selected="{{selectQuantityEvening '2'}}">2</option>
+              <option selected="{{selectQuantityEvening '3'}}">3</option>
+              <option selected="{{selectQuantityEvening ''}}"></option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="label-space" for="name">z. Nacht:</label>
+            <select name="QuantityNightEdit">
+              <option selected="{{selectQuantityNight '1'}}">1</option>
+              <option selected="{{selectQuantityNight '2'}}">2</option>
+              <option selected="{{selectQuantityNight '3'}}">3</option>
+              <option selected="{{selectQuantityNight ''}}"></option>
+            </select>
+          </div>
+          <label class="label-space" for="name">Einnahmehinweis:</label>
+          <br>
+          <input class="input-size" type="text" name="TakingNoteEdit" placeholder="Einnahmehinweis eintragen" value="{{medication.takingNote}}">
+          <br>
+          <label class="label-space" for="name">Grund:</label>
+          <br>
+          <input class="input-size" type="text" name="ReasonEdit" placeholder="Grund eintragen" value="{{medication.reason}}">
+          <!-- <label for="name">Anwenden bis:</label> -->
+          <!-- <br>
+              <label for="name">Hausarzt:</label>
+              <br>
+              <label for="name">Facharzt:</label>
+              <br>
+              <label for="name">Selbstmedikation:</label> -->
+          <!-- </div> -->
+          <!-- <div class="col-md-6"> -->
+
+          <!-- <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+
+              <br>
+              <input type="date" name="UntilTaking" placeholder="Anwenden bis eintragen">
+              <br>
+              <input type="text" name="HouseDoctor" placeholder="Hausarzt eintragen">
+              <br>
+              <input type="text" name="SpecialDoctor" placeholder="Facharzt eintragen">
+              <br>
+              <input type="text" name="SelfMedication" placeholder="Selbstmedikation eintragen"> -->
+          <!-- </div> -->
+
+          <!-- </div> -->
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-success" id="edit"><span class="glyphicon glyphicon-floppy-save"></span> Speichern</button>
+            <button type="button" class="btn btn-warning" data-dismiss="modal"><span
+                    class="glyphicon glyphicon-ban-circle"></span> Abbrechen</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

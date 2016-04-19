@@ -1,0 +1,46 @@
+<template name="editPatientModal">
+    <div class="modal fade" id="editPatientModal">
+        <div class="modal-dialog modal-sm">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title">Patient editieren</h4>
+                </div>
+                <div class="modal-body"><label class="label-space" for="firstName">
+                </label>
+                    <br>
+                    <input class="input-size" type="text" name="FirstNameEdit" id="firstName" autofocus
+                           placeholder="Vorname" value="{{patient.firstName}}"/>
+                    <br>
+                    <label class="label-space" for="lastName">Nachname:
+                    </label>
+                    <br>
+                    <input class="input-size" type="text" name="LastNameEdit" id="lastName" placeholder="Nachname"
+                           value="{{patient.lastName}}"/>
+                    <br>
+                    <label class="label-space" for="birthdate">Geburtsdatum:
+                    </label>
+                    <br>
+                    <input class="input-size" type="date" name="BirthdateEdit" id="birthdate" placeholder="Geburtsdatum"
+                           value="{{patient.formatedDate}}"/>
+                    <br>
+                    <label class="label-space" for="weight">Gewicht:
+                    </label>
+                    <br>
+                    <input class="input-size" type="number" name="WeightEdit" id="weight"
+                           placeholder="Körpergewicht in kg - aufgerundet" value="{{patient.weight}}"/>
+                    <br>
+                    <label class="label-space" for="heigth">Körpergröße:
+                    </label>
+                    <br>
+                    <input class="input-size" type="number" name="HeigthEdit" id="heigth"
+                           placeholder="Körpergröße in cm - aufgerundet" value="{{patient.heigth}}"/>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-success" id="edit"><span class="glyphicon glyphicon-floppy-save"></span> Speichern</button>
+                    <button type="button" class="btn btn-warning" data-dismiss="modal"><span
+                            class="glyphicon glyphicon-ban-circle"></span> Abbrechen</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

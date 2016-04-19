@@ -1,0 +1,8 @@
+{
+  "galaxy.meteor.com": {
+    "env": {
+      "ROOT_URL": "http://smartwatch.empyros.de",
+      "MONGO_URL": "mongodb://SgtHero:test123@ds021969.mlab.com:21969/smart-watch-prototype"
+    }
+  }
+}
