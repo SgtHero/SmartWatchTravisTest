@@ -27,4 +27,4 @@ standard-minifier-css
 standard-minifier-js
 erasaur:meteor-lodash
 reactive-var
-anti:gagarin
+anti:gagarin@=0.4.12
