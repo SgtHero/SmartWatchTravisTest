@@ -1,15 +1,13 @@
-sudo: required
-language: node_js
 dependencies:
   cache_directories:
     - ~/.meteor
   override:
     - meteor || curl https://install.meteor.com | /bin/sh
-#    - npm install -g gagarin
+    - npm install -g gagarin
 
-#test:
-#  override:
-#    - gagarin -v
+test:
+  override:
+    - gagarin -v
 
 #deployment:
 #  production:
